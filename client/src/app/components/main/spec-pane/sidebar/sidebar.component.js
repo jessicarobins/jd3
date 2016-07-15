@@ -1,7 +1,7 @@
 var module = angular.module('jessdocs');
 module.
   component('sidebar', {
-    templateUrl: 'app/components/main/sidebar/sidebar.template.html',
+    templateUrl: 'app/components/main/spec-pane/sidebar/sidebar.template.html',
     controller: ['$http', '$mdSidenav', '$projects', '$specs', '$tagtypes',
     function (
       $http, 

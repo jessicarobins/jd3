@@ -8,7 +8,7 @@ module.component('spec', {
         tag: '<',
         ticket: '<'
     },
-    templateUrl: 'app/components/main/specs/spec/spec.template.html',
+    templateUrl: 'app/components/main/spec-pane/specs/spec/spec.template.html',
     controller: function(
         $scope, 
         $http,

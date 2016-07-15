@@ -1,5 +1,5 @@
 module.component('fab', {
-     templateUrl: 'app/components/main/fab/fab.template.html',
+     templateUrl: 'app/components/main/spec-pane/fab/fab.template.html',
      controller: function(
          $anchorScroll, 
          $location, 

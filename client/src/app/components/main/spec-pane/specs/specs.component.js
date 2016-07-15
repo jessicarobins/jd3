@@ -1,5 +1,5 @@
 module.component('specs', {
-     templateUrl: 'app/components/main/specs/specs.template.html',
+     templateUrl: 'app/components/main/spec-pane/specs/specs.template.html',
      controller: function(
         $anchorScroll,
         $location,

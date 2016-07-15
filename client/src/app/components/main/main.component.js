@@ -1,6 +1,8 @@
 var module = angular.module('jessdocs');
 module.component('main', {
-    
+    transclude: {
+        'content': 'mainContent'
+    },
     templateUrl: 'app/components/main/main.template.html',
     controller: function(
         $anchorScroll,
