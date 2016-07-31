@@ -10,7 +10,8 @@ var browserSyncSpa = require('browser-sync-spa');
 var util = require('util');
 
 var proxyMiddleware = require('http-proxy-middleware');
-var exec = require('child_process').exec;
+// var exec = require('child_process').exec;
+var exec = require('gulp-exec');
 
 function browserSyncInit(baseDir, browser) {
   browser = browser === undefined ? 'default' : browser;
@@ -43,7 +44,8 @@ function browserSyncInit(baseDir, browser) {
     startPath: '/',
     server: server,
     browser: browser,
-    port: 8080
+    port: 8080,
+    ui: { port: 8081 }
   });
 }
 
@@ -52,7 +54,7 @@ browserSync.use(browserSyncSpa({
 }));
 
 gulp.task('rails', function() {
-  exec("../bin/rails s");
+  exec("../jessdocs/bin/rails s -p 8082 -b $IP");
 });
 
 gulp.task('serve', ['watch'], function () {
