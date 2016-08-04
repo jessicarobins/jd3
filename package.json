@@ -1,0 +1,21 @@
+{
+  "name": "jd3",
+  "version": "3.0.0",
+  "description": "jessdocs 3.0",
+  "engines": {
+    "node": "4.4.5"
+  },
+  "scripts": {
+    "heroku-postbuild": "cd client && gulp && cd ../jessdocs && bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicarobins/jd3.git"
+  },
+  "author": "jess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessicarobins/jd3/issues"
+  },
+  "homepage": "https://github.com/jessicarobins/jd3#readme"
+}

@@ -1,0 +1,1 @@
+web: cd jessdocs && bundle exec puma -C config/puma.rb
